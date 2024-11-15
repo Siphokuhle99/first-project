@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"href="Bokstyle.css">
+    
+
+    <title>Booking</title>
+</head>
+<body>
+    
+    <div class="form-box">
+            <div class="top-field">
+    <h2><b>Book Your Appointment Here</b></h2>
+
+    <p>*Please arrive 30 minutes prior to the scheduled*</p>
+            </div>
+      
+    <div class="wrapper">
+      
+      <form id="form" action="" name="Book" onsubmit="return validation()">
+<p id="result">head</p>
+      <p>
+        <div class="Input-box">
+          
+    <label for="fname">First-Name:</label>
+    <input type="text" class="Input-box" id="fname"  placeholder="FULL NAME">
+    <i class="bx bx-user"></i>
+          
+      
+    </p>
+    
+    <P>
+      
+    <label for="Surname">Surname:</label>
+    <input type="text"class="Input-box" id="Surname" name="Surname" placeholder="SURNAME">
+    <i class="bx bx-user"></i>
+    
+  
+    </P>
+    
+    <P>
+      
+        <label for="PhoneNumber">Phone Number:</label>
+        <input type="text"class="Input-box"id="PhoneNumber" name="Phone Number" placeholder="+27704642895">
+        <i class="bx bx-phone"></i>
+        
+      </div>
+        </P>
+      
+    <P>
+    <label for="date">date:</label>
+    <input type="date" id="date" name="date" placeholder="DATE">
+    </P>
+    <br>
+    <div class="select">
+    <p>
+      <label for="timeslots">Time slots:</label>  
+      <select id="timeslots" name="timesolts"> 
+        <option value="" ></option> 
+       <Option value="08:30">08:30</Option> 
+       <Option value="10:00">10:00</Option>
+       <Option value="12:00">12:00</Option>
+       <Option value="13:00">13:00</Option>
+       <Option value="14:00">14:00</Option>
+       <Option value="15:00">15:00</Option>
+    </p>
+    
+    
+</select>
+<br>
+<br>
+
+<p>
+  <label for="ServiceType">Service Type:</label> 
+<select id="ServiceType" name="ServiceType">
+  <option value=""></option>
+<option value="Adults Long Braids">Adults Long Braids</option>
+<option value="Adults Short Braids">Adults Short Braids</option>
+<option value="Adults Conrows">Adults Conrows</option>
+<option value="Kids Long Braids">Kids Long Braids</option>
+<option value="Kids Short Braids">Kids Short Braids</option>
+<option value="Kids Conrows">Kids Conrows</option>
+<option value="Hair Wash">Hair Wash</option>
+<option value="Hair Treatment">Hair Treatment</option>
+<option value="Manicure">Manicure</option>
+<option value="Pedicure">Pedicure</option>
+<option value="Acyrlic Nails">Acrylic Nails</option>
+<option value="Gel Polish">Gel Polish</option>
+
+</select>
+<br>  
+<br>
+<button type="submit" id="SubmitBtn" class="Sub" onclick ="openPopup()">Submit</button>
+<div class="popup" id="popup">
+  <img src="Tick.png" >
+  <h2>Thank You!</h2>
+  <p>Your Booking was successfully submitted. Thanks!</p>
+  <button type="button" onclick="closePopup()">OK</button>
+
+</div>
+</p>
+  
+  </form>
+    </div>
+    <script defer src="Booking.js"></script>
+    
+</body>
+</html>
